@@ -6,9 +6,11 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 //middleware
+
+
 app.use(cors({
-  origin: 'https://tourmaline-rugelach-bb4be5.netlify.app',
-  credentials: true
+  origin: "*",
+  credentials: true
 
 }))
 app.use(express.json());
